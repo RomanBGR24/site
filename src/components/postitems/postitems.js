@@ -2,10 +2,11 @@ import React from 'react';
 import './postitems.css';
 
 
-export default function PostItems(item) {
+export default function PostItems({post}) {
     return (
-          <div className='wrapper'>
-              <p>{item.name}</p> ... <p>item.company_field</p> <br />
+          <div className='wrapperPostItems'>
+              <p>{post.name}</p> ... <p>{post.company_field}</p> <br />
+              <p>{post.year}></p>        
           </div>
   );
   }

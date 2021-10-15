@@ -13,13 +13,13 @@ header {
     background-color: white;
     margin: auto;
     margin-top: 150px;
-    
+    padding: 10px;    
 }
 
 nav{
     position: relative;
     top: -52px;
-    left: -300px;
+/*    left: -300px; */
     width: 400px;
     height: 50px;
     border-radius: 8px;

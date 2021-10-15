@@ -53,7 +53,7 @@ export default function Posts() {
         <div className='postsWrapper'>
             <div className = 'posts'>
                 {postElements.map((item,index) => 
-                    <div key={postElements[index].id}><PostItems item={postElements[index]}/> </div> )}
+                    <div key={postElements[index].id}><PostItems post={item}/> </div> )}
                 
             </div>
 

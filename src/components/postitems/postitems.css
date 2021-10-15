@@ -1,5 +1,7 @@
-.wrapper{
-    width: 75px;
-    height: 60px;
+.wrapperPostItems{
+    width: 125px;
+    height: 100px;
+    padding: 5px;
     border: solid 1px red;
+    font-size: 50%;
 }
