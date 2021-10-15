@@ -3,19 +3,26 @@ header {
     height: 50px;
     border-bottom: solid 2px black;
 }
-#m {
+.m {
     display: flex;
-    justify-content: center;
-    width: 800px;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
     border: solid 1px;
+    background-color: white;
+    margin: auto;
+    margin-top: 150px;
+    
 }
 
 nav{
-    margin: 25px auto 0;
     position: relative;
-    width: 300px;
+    top: -52px;
+    left: -300px;
+    width: 400px;
     height: 50px;
     border-radius: 8px;
+    border: solid 1px;
 }
 
 nav ul{
@@ -23,13 +30,11 @@ nav ul{
 }
 nav li{
     line-height: 50px;
+    padding:5px;
 	height: 100%;
 	font-size: 15px;
 	display: inline-block;
-	position: relative;
-	z-index: 1;
 	text-decoration: none;
-	text-transform: uppercase;
 	text-align: center;
 	color: white;
 	cursor: pointer;
