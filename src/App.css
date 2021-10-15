@@ -3,8 +3,11 @@ header {
     height: 50px;
     border-bottom: solid 2px black;
 }
-
 #m {
+    display: flex;
+    justify-content: center;
     width: 800px;
-    background-color: ivory;
+    border: solid 1px;
 }
+
+
