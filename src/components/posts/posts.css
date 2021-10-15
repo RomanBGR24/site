@@ -1,0 +1,10 @@
+.postDetail{
+    width: auto;
+    margin: 25px;
+    border: solid 1px;
+}
+
+.posts{
+    display: flex;
+    justify-content: center;
+}

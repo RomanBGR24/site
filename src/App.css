@@ -4,9 +4,10 @@ header {
     border-bottom: solid 2px black;
 }
 .m {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /*  display: flex;
+  //  flex-direction: column;
+  //  align-items: center;
+  */
     width: 1000px;
     border: solid 1px;
     background-color: white;
