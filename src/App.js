@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='wrapper'>
     <header></header>
-    <div id='m'>
+    <div className='m'>
       <BrowserRouter>
         <nav>
           <ul>
