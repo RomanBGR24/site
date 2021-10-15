@@ -1,7 +1,7 @@
 import React from 'react';
-import './prject.css';
+import './project.css';
 
-export default function Project() {
+export default function Project({project}) {
     return (
         <div className='wrapperProjectItem'>
             <div className = 'projectItemName'><p>{project.name}</p></div>
