@@ -2,7 +2,7 @@ import React from 'react';
 import PostItems from '../postitems/postitems';
 import './posts.css';
 
-let postElements = [
+const postElements = [
     {
         'id':1,
         'year':2008,
