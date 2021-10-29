@@ -1,6 +1,10 @@
 import React from 'react';
 import ProjectItem from '../project/project';
 
+
+
+
+/*
 const projectElements = [
   {
     'id':1,
@@ -24,8 +28,33 @@ const projectElements = [
     'fullText':'Много чего сделал',
   },
 ];
-
+*/
 export default function Projects() {
+
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [projectElements, setItems] = useState([]);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:3333/api/projects")
+      .then(res => res.json())
+      .then((res) => {
+        setIsLoaded(true);
+        setItems(res);
+      }, (error) => {
+        setIsLoaded(true);
+        setError(error);
+      }
+      )
+  } 
+  ,[]);
+  
+  if(error) {
+    return <div>Error: {error.message}</div>;
+  } else if (!isLoaded) {
+    return <div>Loading...</div>;
+  }
+  
   return (
     <div className='projectsWrapper'>
       <div className = 'projects'>

@@ -15,7 +15,7 @@ function App() {
             <li><Link to="/">Моя карьера</Link></li>
             <li><Link to="/projects">Мои проекты</Link></li>
             <li><Link to="/skills">Моя квалификация</Link></li> 
-	 </ul>
+	        </ul>
         </nav>
         <Switch>
           <Route path="/projects"><Projects /></Route>
